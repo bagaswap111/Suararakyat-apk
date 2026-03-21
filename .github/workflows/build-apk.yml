@@ -38,20 +38,20 @@ jobs:
         run: |
           flutter build apk \
             --release \
-            --flavor public \
+            --flavor rakyat \
             --target lib/main_public.dart \
             --no-tree-shake-icons
-          cp build/app/outputs/flutter-apk/app-public-release.apk \
+          cp build/app/outputs/flutter-apk/app-rakyat-release.apk \
              build/app/outputs/flutter-apk/SuaraRakyat-Public.apk
 
       - name: Build Portal Pejabat (Government APK)
         run: |
           flutter build apk \
             --release \
-            --flavor government \
+            --flavor pejabat \
             --target lib/main_government.dart \
             --no-tree-shake-icons
-          cp build/app/outputs/flutter-apk/app-government-release.apk \
+          cp build/app/outputs/flutter-apk/app-pejabat-release.apk \
              build/app/outputs/flutter-apk/PortalPejabat-Government.apk
 
       - name: Upload APK artifacts

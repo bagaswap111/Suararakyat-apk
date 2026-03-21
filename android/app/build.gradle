@@ -20,11 +20,11 @@ android {
 
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
-        public {
-            res.srcDirs = ["src/public/res", "src/main/res"]
+        rakyat {
+            res.srcDirs = ["src/rakyat/res", "src/main/res"]
         }
-        government {
-            res.srcDirs = ["src/government/res", "src/main/res"]
+        pejabat {
+            res.srcDirs = ["src/pejabat/res", "src/main/res"]
         }
     }
 
@@ -39,12 +39,12 @@ android {
     flavorDimensions "app"
 
     productFlavors {
-        public {
+        rakyat {
             dimension "app"
             applicationId "com.suararakyat.public"
             resValue "string", "app_name", "SuaraRakyat"
         }
-        government {
+        pejabat {
             dimension "app"
             applicationId "com.suararakyat.government"
             resValue "string", "app_name", "Portal Pejabat"
