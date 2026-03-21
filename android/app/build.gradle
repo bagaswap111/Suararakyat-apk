@@ -21,10 +21,10 @@ android {
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
         rakyat {
-            res.srcDirs = ["src/rakyat/res", "src/main/res"]
+            res.srcDirs = ["src/rakyat/res"]
         }
         pejabat {
-            res.srcDirs = ["src/pejabat/res", "src/main/res"]
+            res.srcDirs = ["src/pejabat/res"]
         }
     }
 
